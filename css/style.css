@@ -1,0 +1,29 @@
+#todo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1.7em;
+}
+
+.active{
+    order: -1;
+    flex: 1 0 100%;
+}
+
+#btn{
+    
+}
+
+#todoCards{
+    
+}
+
+.todoCard{
+    position: relative;
+}
+
+.fa-trash{
+    position: absolute;
+    left: 10em;
+    top: 13em;
+}
