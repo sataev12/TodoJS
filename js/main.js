@@ -10,7 +10,7 @@ let divCount = document.createElement("div");
 divCount.classList.add("counter");
 body.appendChild(divCount)
 
-// Fonction pour compter le nombre de cartes
+
 function countCards() {
     // Sélectionne tous les éléments avec la classe '.todoCard'
     const cards = document.querySelectorAll('.todoCard');
@@ -18,11 +18,12 @@ function countCards() {
     return cards.length;
 }
 
-// Fonction pour afficher le nombre de cartes sur l'écran
+
 function displayCardCount() {
     const counterElement = document.querySelector('.counter');
     // Mettre à jour le contenu du compteur avec le nombre actuel de cartes
     counterElement.textContent = `Nombre de cartes : ${countCards()}`;
+    textArea.value = `Task ${countCards()}`;
 }
 
 function ajout() {
